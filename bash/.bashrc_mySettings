@@ -14,3 +14,5 @@ alias clip='xclip -selection clipboard'
 alias ll='ls -l --color=auto'
 alias profile='ssh -XC -p 2222 scada@127.0.0.1 -v'
 alias pvvsBoot='ssh -p 2228 scada@127.0.0.1 -v'
+alias lxplus="ssh mgialous@lxplus.cern.ch -v -4"
+
