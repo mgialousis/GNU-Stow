@@ -1,0 +1,16 @@
+# .bashrc_mySettings
+
+# include .bashrc_myAliases if it exists
+if [ -f $HOME/.bashrc_myAliases ]; then
+    . $HOME/.bashrc_myAliases
+fi
+
+export PROMPT_COMMAND='history -a;history -c;history -r'
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+##ALIASES
+alias clip='xclip -selection clipboard'
+alias ll='ls -l --color=auto'
+alias profile='ssh -XC -p 2222 scada@127.0.0.1 -v'
+alias pvvsBoot='ssh -p 2228 scada@127.0.0.1 -v'
